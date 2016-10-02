@@ -1,0 +1,57 @@
+---
+title: "Assignment Tidying and Transforming Data"
+author: "Yifei Li"
+date: "September 26, 2016"
+output: html_document
+---
+The chart above describes arrival delays for two airlines across five destinations. 
+
+![](http://p1.bpimg.com/567571/4c31adf50c318ceb.png)
+
+#
+1.Create a .CSV file (or optionally, a MySQL database!) that includes all of the information above. You’re encouraged to use a “wide” structure similar to how the information appears above, so that you can practice tidying and transformations as described below.
+
+```{r}
+# created a .csv file and uploaded on Github
+Schedule <- read.csv(file="https://raw.githubusercontent.com/yli74/movies/master/flights%203%202.csv", header=TRUE, sep=",")
+Schedule
+```
+2.Read the information from your.CSV file into R,and use tidyr and dplyr as needed to tidy and transform your data.
+```{r}
+# According to "wrangling" on Rstudio, Tidy data needs to meet the following 3 requirements, 
+
+# 1. Ech variable is saved in a column
+# 2. Each observation is saved in its own row
+# 3. Each "type"of observation stored in a single table
+
+library(tidyr)
+library(dplyr)
+library(stringr)
+
+# View the dataframe and create names for Column 1 and 2
+str(Schedule) 
+names(Schedule)[1:2] <- c('Airlines','Status')
+Schedule
+
+Tidydata<-gather(Schedule, "cities","flights",3:7)
+Tidydata
+
+Tidydata1<-spread(Tidydata, Status, flights)
+Tidydata1
+
+# The new dataframe has met all requirements 
+glimpse(Tidydata1)
+```
+3.Perform analysis to compare the arrival delays for the two airlines.
+
+```{r}
+# To compare the arrival delarys for the two airlines, we must get the ratio = delayed flights/ (delayed flights+on time flights)
+
+library(tidyr)
+library(dplyr)
+
+Tidydata1 %>% 
+mutate(ratio=delayed/(delayed+`on time`)) %>%
+  arrange(cities, Airlines)
+```
+Overall, AM WEST has higher delayed rate than Alaska. If we look at the result by cities, AM WEST actually has lower delayed rate than San Fransciso. 
