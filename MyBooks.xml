@@ -1,0 +1,27 @@
+<?xml version="1.0" ?> 
+<My Book>
+<subject="R">
+  <title lang="en">An Introduction to R</title> 
+  <author>>William N. Venables, David M. Smith</author> 
+  <Date>September 1, 2004</Date> 
+  <Publisher>Network Theory Ltd</Publisher>
+  <ISBN>978-0954161743</ISBN> 
+  <Amazon Best Sellers Rank>#1,825,899</Amazon Best Sellers Rank>
+</book>
+<subject="R">
+  <title lang="en">Practical Data Science with R</title> 
+  <author>Nina Zumel, John Mount</author> 
+  <Date>Apr 13, 2014</Date> 
+  <Publisher>Manning</Publisher>
+  <ISBN>978-1617291562</ISBN>
+  <Amazon Best Sellers Rank>#103,618</Amazon Best Sellers Rank>
+</book>
+<subject="R">
+  <title lang="en">An Introduction to Statistical Learning: with Applications in R (Springer Texts in Statistics)</title> 
+  <author>Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani</author> 
+  <Date>August 12, 2013</Date> 
+  <Publisher>Springer</Publisher>
+  <ISBN>978-14614713703</ISBN>
+  <Amazon Best Sellers Rank>#5,881</Amazon Best Sellers Rank>
+</book>
+</My Book>
