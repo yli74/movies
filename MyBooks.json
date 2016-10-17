@@ -1,1 +1,42 @@
-{  "My Books": [    {      "id": "01",      "title": "An Introduction to R",      "author": [        "William N. Venables",        "David M. Smith"      ],      "Date": "September 1, 2004",      "publisher": "Network Theory Ltd",      "ISBN": "978-0954161743",      "Amazon Best Sellers Rank": "#1,825,899"    },    {      "id": "02",      "title": "Practical Data Science with R",      "author": [        "Nina Zumel",        "John Mount"      ],      "Date": "Apr 13, 2014",      "publisher": "Manning",      "ISBN": "978-1617291562",      "Amazon Best Sellers Rank": "#103,618"    },    {      "id": "03",      "title": "An Introduction to Statistical Learning: with Applications in R (Springer Texts in Statistics)",      "author": [        "Gareth James",        "Daniela Witten",        "Trevor Hastie",        "Robert Tibshirani"      ],      "Date": "August 12, 2013",      "publisher": "Springer",      "ISBN": "978-14614713703",      "Amazon Best Sellers Rank": "#5,881"    }  ]}
+{
+	"My Books": [
+		{
+			"id": "01",
+			"title": "An Introduction to R",
+			"author": [
+				"William N. Venables",
+				"David M. Smith"
+			],
+			"Date": "September 1, 2004",
+			"publisher": "Network Theory Ltd",
+			"ISBN": "978-0954161743",
+			"Amazon Best Sellers Rank": "#1,825,899"
+		},
+		{
+			"id": "02",
+			"title": "Practical Data Science with R",
+			"author": [
+				"Nina Zumel",
+				"John Mount"
+			],
+			"Date": "Apr 13, 2014",
+			"publisher": "Manning",
+			"ISBN": "978-1617291562",
+			"Amazon Best Sellers Rank": "#103,618"
+		},
+		{
+			"id": "03",
+			"title": "An Introduction to Statistical Learning: with Applications in R (Springer Texts in Statistics)",
+			"author": [
+				"Gareth James",
+				"Daniela Witten",
+				"Trevor Hastie",
+				"Robert Tibshirani"
+			],
+			"Date": "August 12, 2013",
+			"publisher": "Springer",
+			"ISBN": "978-14614713703",
+			"Amazon Best Sellers Rank": "#5,881"
+		}
+	]
+}
